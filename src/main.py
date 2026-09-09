@@ -1,4 +1,5 @@
 from datetime import datetime
+from utils import add, subtract
 
 def main():
     name = "Nazmul Hossain"
@@ -6,6 +7,12 @@ def main():
     
     print(f"Developer Name: {name}")
     print(f"Today's Date: {today_date}")
+    
+    # Calculator operations
+    num1, num2 = 10, 5
+    print("\n--- Basic Calculator Operations ---")
+    print(f"Addition: {num1} + {num2} = {add(num1, num2)}")
+    print(f"Subtraction: {num1} - {num2} = {subtract(num1, num2)}")
 
 if __name__ == "__main__":
     main()
